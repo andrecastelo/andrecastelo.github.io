@@ -1,0 +1,59 @@
+// grid
+$gutter: 20px;
+$columns: 12;
+.container { width: 100%; max-width: 1200px; margin: 0 auto; }
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    &:before, &:after { content: ""; display: table; clear: both; }
+    .row {
+        margin-left: -($gutter/2);
+        margin-right: -($gutter/2);
+        width: auto;
+    }
+    &.margin-row {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@mixin grid-html-classes($size) {
+    @for $i from 1 through $columns {
+        .#{$size}-#{$i} { width: ($i / 12) * 100%; }
+    }
+
+    @for $i from 1 through ($columns - 1) {
+        .#{$size}-offset-#{$i} { margin-left: ($i / 12) * 100% !important; }
+    }
+    .#{$size}-centered {
+        margin-left: auto; margin-right: auto; float: none;
+        &:last-child { float: none; }
+    }
+    [class*='#{$size}-'] {
+        padding-left: ($gutter/2);
+        padding-right: ($gutter/2);
+        // width: 100%;
+        float: left;
+        min-height: 1px;
+        display: block;
+    }
+}
+@include extra_small  { @include grid-html-classes($size:xsmall); }
+@include small_up     { @include grid-html-classes($size:small); }
+@include medium_up    { @include grid-html-classes($size:medium); }
+@include large_up     { @include grid-html-classes($size:large); }
+@include xlarge_up    { @include grid-html-classes($size:xlarge); }
+@include xxlarge      { @include grid-html-classes($size:xxlarge); }
+
+.pull-left  { float: left  !important; }
+.pull-right { float: right !important; }
+
+.no-padding-left { padding-left: 0 !important; }
+.no-padding-right { padding-right: 0 !important; }
+
+.outline {
+    outline: 1px solid red;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "andrecastelo.github.io",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Andre Castelo"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/andrecastelo/andrecastelo.github.io",
+  "moduleType": [
+    "amd"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
