@@ -1,1 +1,1 @@
-"use strict";!function(){smoothScroll.init()}();
+"use strict";
