@@ -1,0 +1,52 @@
+{
+    "projects": [
+        {
+            "image": "img/portfolio-visaorio500.png",
+            "title": "Visão Rio 500",
+            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "tags": [ "PHP", "Laravel", "jQuery" ],
+            "description": "Nihil expedita, quasi assumenda eos earum culpa saepe explicabo voluptatibus eveniet qui autem cupiditate veritatis omnis ad totam quidem possimus suscipit blanditiis!",
+            "url": "http://visaorio500.rio"
+        },
+        {
+            "image": "img/portfolio-caixa.png",
+            "title": "#AVidaPede Sua História",
+            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "tags": [ "PHP", "CodeIgniter", "Facebook API", "Instagram API", "Cloudinary", "Stupeflix" ],
+            "description": "Nihil expedita, quasi assumenda eos earum culpa saepe explicabo voluptatibus eveniet qui autem cupiditate veritatis omnis ad totam quidem possimus suscipit blanditiis!",
+            "url": false
+        },
+        {
+            "image": "img/portfolio-cmb.png",
+            "title": "CookingMyBooks",
+            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "tags": [ "PHP", "CodeIgniter", "Javascript", "AngularJS", "jQuery" ],
+            "description": "Nihil expedita, quasi assumenda eos earum culpa saepe explicabo voluptatibus eveniet qui autem cupiditate veritatis omnis ad totam quidem possimus suscipit blanditiis!",
+            "url": "http://www.cookingmybooks.com:7070/#/"
+        },
+        {
+            "image": "img/portfolio-lfg.png",
+            "title": "LookingForGroup.gg",
+            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "tags": [ "PHP", "Laravel", "Javascript", "AngularJS", "jQuery" ],
+            "description": "Nihil expedita, quasi assumenda eos earum culpa saepe explicabo voluptatibus eveniet qui autem cupiditate veritatis omnis ad totam quidem possimus suscipit blanditiis!",
+            "url": "http://lookingforgroup.gg"
+        },
+        {
+            "image": "img/portfolio-dddm.png",
+            "title": "Deuses de Dois Mundos",
+            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "tags": [ "Javascript", "jQuery" ],
+            "description": "Nihil expedita, quasi assumenda eos earum culpa saepe explicabo voluptatibus eveniet qui autem cupiditate veritatis omnis ad totam quidem possimus suscipit blanditiis!",
+            "url": "http://deusesdedoismundos.com.br"
+        },
+        {
+            "image": "img/portfolio-organomix.png",
+            "title": "Organomix Receitas",
+            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "tags": [ "PHP", "CodeIgniter", "Javascript", "AngularJS", "jQuery" ],
+            "description": "Nihil expedita, quasi assumenda eos earum culpa saepe explicabo voluptatibus eveniet qui autem cupiditate veritatis omnis ad totam quidem possimus suscipit blanditiis!",
+            "url": false
+        }
+    ]
+}
