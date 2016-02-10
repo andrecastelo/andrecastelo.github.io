@@ -3,7 +3,7 @@
 (function() {
     var source = $.get('/templates/portfolio.html').then(function(source) {
         var template = Handlebars.compile(source);
-        var content = getContent();        
+        var content = getContent();
         $('.portfolio').append(template(content));
     });
 
