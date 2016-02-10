@@ -41,7 +41,8 @@ gulp.task('serve', [ 'vendor-scripts', 'sass', 'scripts' ], function() {
         server: "."
     });
 
-    gulp.watch("*.html").on('change', browserSync.reload);
+    gulp.watch("**/*.html").on('change', browserSync.reload);
+    gulp.watch("content.json").on("change", browserSync.reload);
     gulp.watch('sass/**/*.scss', [ 'sass' ]);
     gulp.watch('scripts/**/*.js', [ 'scripts' ]).on('change', browserSync.reload);
     gulp.watch('vendor/**/*.js', [ 'vendor-scripts' ]).on('change', browserSync.reload);;

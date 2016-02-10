@@ -16,7 +16,5 @@
     }
 }
 
-.btn-white { 
-    color: #fff;
-    @include make_button(#eee, $accent-color); 
-}
+.btn-white { @include make_button(#eee, $accent-color);  }
+.btn-black { @include make_button(#444, $accent-color); }

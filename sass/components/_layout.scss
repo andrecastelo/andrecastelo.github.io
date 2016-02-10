@@ -81,15 +81,19 @@ header {
 }
 
 .portfolio {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    &__project {
+        padding-top: 30px;
+        padding-bottom: 30px;
 
-    &__project:nth-child(2) { background-color: darken(#fff, 5); }
+        &:nth-child(2) { 
+            background-color: darken(#fff, 2); 
+        }
+    }
 
     &__title {
         font-size: 32px;
         color: #333;
-        margin: 0;
+        margin-bottom: 0;
 
         @include open_sans_bold;
     }
@@ -99,5 +103,23 @@ header {
         font-size: 18px;
         margin: 0;
         @include serif_font;
+    }
+
+    &__tags {
+        list-style: none;
+        padding: 0;
+        margin: 15px 0 15px 0;
+
+        @include clearfix;
+
+        li { 
+            float: left; 
+            border: 1px solid #ddd;
+            background-color: #eee;
+            padding: 7px;
+            margin-right: 7px;
+            color: #666;
+            border-radius: 2px;
+        }
     }
 }
