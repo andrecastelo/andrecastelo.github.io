@@ -85,7 +85,7 @@ header {
         padding-top: 30px;
         padding-bottom: 30px;
 
-        &:nth-child(2) { 
+        &:nth-child(even) { 
             background-color: darken(#fff, 2); 
         }
     }
