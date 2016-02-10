@@ -1,10 +1,3 @@
-$extra-small: (0, 480px);
-$small: (481px, 768px);
-$medium: (769px, 992px);
-$large: (993px, 1200px);
-$xlarge: (1201px, 1920px);
-$xxlarge: (1921px);
-
 @mixin extra_small { @media screen and (max-width: #{nth($extra-small, 2)}) { @content; } }
 
 @mixin small      { @media screen and (min-width: #{nth($small, 1)}) and (max-width: #{nth($small, 2)}) { @content; } }

@@ -1,0 +1,103 @@
+* { @include prefix('box-sizing', 'border-box', moz webkit); }
+body, html { margin: 0; padding: 0; }
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    a { text-decoration: none; }
+
+    ul { 
+        padding: 0; 
+        margin: 0; 
+        list-style: none;
+
+        li {
+            float: right;
+            @include lato;
+
+            a { 
+                padding: 15px;
+                color: $white-color;
+                @include animated_border;
+            }            
+        }
+    }
+
+    .logo {
+        padding-bottom: 15px;
+        display: inline-block;
+        text-transform: none;
+        color: $white-color;
+
+        @include animated_border;
+        @include lato;
+    }
+}
+
+.hero {
+    min-height: 500px;
+    background-image: url('img/pattern.png');
+
+    h1 {
+        text-align: center;
+        margin-top: 150px;
+        color: $white-color;
+        font-size: 55px;
+        margin-bottom: 0px;
+
+        @include open_sans_bold;
+    }
+
+    &__subtitle {
+        margin-top: 0px;
+        color: $white-color;
+        text-align: center;
+        width: 65%;
+        margin: 0 auto;
+        font-size: 22px;
+        color: #ccc;
+        line-height: 1.6em;
+        
+
+        @include serif_font;
+    }
+
+    &__call-to-action {
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+.footer {
+    background-image: url('img/pattern.png');
+    min-height: 500px;
+}
+
+.portfolio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__project:nth-child(2) { background-color: darken(#fff, 5); }
+
+    &__title {
+        font-size: 32px;
+        color: #333;
+        margin: 0;
+
+        @include open_sans_bold;
+    }
+
+    &__subtitle {
+        color: #666;
+        font-size: 18px;
+        margin: 0;
+        @include serif_font;
+    }
+}

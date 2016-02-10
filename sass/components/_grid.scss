@@ -1,14 +1,28 @@
-// grid
-$gutter: 20px;
-$columns: 12;
-.container { width: 100%; max-width: 1200px; margin: 0 auto; }
+@mixin container_fixed {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: ($gutter / 2);
+    padding-right: ($gutter / 2);
+    @include clearfix;
+}
+
+.container {
+    @include container_fixed;
+    @include small_up { width: $container-small; }
+    @include medium_up { width: $container-medium; }
+    @include large_up { width: $container-large; }
+}
+
+.container-fluid { 
+    @include container_fixed; 
+}
+
 .row {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    &:before, &:after { content: ""; display: table; clear: both; }
     .row {
         margin-left: -($gutter/2);
         margin-right: -($gutter/2);
@@ -18,11 +32,14 @@ $columns: 12;
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    @include clearfix;
 }
 
 @mixin grid-html-classes($size) {
     @for $i from 1 through $columns {
-        .#{$size}-#{$i} { width: ($i / 12) * 100%; }
+        .#{$size}-#{$i} { 
+            width: ($i / 12) * 100%; 
+        }
     }
 
     @for $i from 1 through ($columns - 1) {

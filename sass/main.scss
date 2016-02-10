@@ -1,9 +1,17 @@
-/*
----------------------------------------------------------------------------------
-    design and code by: andrecastelo.github.io
-                        (andre castelo)
----------------------------------------------------------------------------------
-*/
+/*------------------------------------------------------------------------------
+        Common components, mixins and classes
+------------------------------------------------------------------------------*/
 
-@import "components/responsive";
-@import "components/grid";
+@import "components/_variables.scss";
+@import "components/_mixins.scss";
+@import "components/_responsive.scss";
+@import "components/_grid.scss";
+@import "components/_typography.scss";
+@import "components/_buttons.scss";
+
+/*------------------------------------------------------------------------------
+        Main styles
+------------------------------------------------------------------------------*/
+
+@import "components/_layout.scss";
+
