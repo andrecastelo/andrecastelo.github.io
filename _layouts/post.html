@@ -1,0 +1,23 @@
+---
+layout: default-no-hero
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post__header">
+        <h1 class="post__title" itemprop="name headline">{{ page.title }}</h1>
+        <p class="post__meta">
+            <time class="post__meta__date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {{ page.date | date: "%b %-d, %Y" }}
+            </time>
+            -
+            <span class="post__meta__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span itemprop="name">Andre Castelo</span>
+            </span>
+        </p>
+    </div>
+
+    <div class="post__content" itemprop="articleBody">
+        {{ content }}
+    </div>
+
+</article>

@@ -13,20 +13,20 @@ header {
     padding: 20px;
     a { text-decoration: none; }
 
-    ul { 
-        padding: 0; 
-        margin: 0; 
+    ul {
+        padding: 0;
+        margin: 0;
         list-style: none;
 
         li {
             float: right;
             @include lato;
 
-            a { 
+            a {
                 padding: 15px;
                 color: $white-color;
                 @include animated_border;
-            }            
+            }
         }
     }
 
@@ -43,7 +43,7 @@ header {
 
 .hero {
     min-height: 500px;
-    background-image: url('img/pattern.png');
+    background-image: url('../img/pattern.png');
 
     h1 {
         text-align: center;
@@ -55,6 +55,10 @@ header {
         @include open_sans_bold;
     }
 
+    &--no-index {
+        min-height: 60px;
+    }
+
     &__subtitle {
         margin-top: 0px;
         color: $white-color;
@@ -64,7 +68,7 @@ header {
         font-size: 22px;
         color: #ccc;
         line-height: 1.6em;
-        
+        font-style: italic;
 
         @include serif_font;
     }
@@ -92,8 +96,8 @@ header {
         padding-top: 30px;
         padding-bottom: 30px;
 
-        &:nth-child(even) { 
-            background-color: darken(#fff, 2); 
+        &:nth-child(even) {
+            background-color: darken(#fff, 2);
         }
     }
 
@@ -109,6 +113,8 @@ header {
         color: #666;
         font-size: 18px;
         margin: 0;
+        font-style: italic;
+
         @include serif_font;
     }
 
@@ -124,8 +130,8 @@ header {
 
         @include clearfix;
 
-        li { 
-            float: left; 
+        li {
+            float: left;
             border: 1px solid #ddd;
             background-color: #f6f6f6;
             padding: 7px;
@@ -135,5 +141,72 @@ header {
             font-size: 12px;
             @include monospaced;
         }
+    }
+}
+
+.post-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.post {
+    width: 100%;
+    padding: 15px;
+
+    @include medium_up {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include large_up {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__title {
+        font-size: 50px;
+        line-height: 1.1;
+        letter-spacing: -0.05em;
+        color: #333;
+
+        a { text-decoration: none; }
+    }
+
+    &__meta {
+        color: #999;
+
+        &__author { font-weight: bold; }
+    }
+
+    &__excerpt {
+        margin-top: 30px;
+        font-size: 20px;
+        line-height: 1.5em;
+        color: #444;
+
+        @include serif_font;
+    }
+
+    &__content {
+        margin-top: 60px;
+        font-size: 22px;
+        line-height: 1.5em;
+        color: #444;
+
+        @include serif_font;
+
+        p { margin-bottom: 40px; }
+        h2 {
+            @include open_sans;
+        }
+    }
+
+    a {
+        color: inherit;
+        transition: all .1s linear;
+        &:hover { color: #000; }
     }
 }

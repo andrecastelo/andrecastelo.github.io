@@ -1,1 +1,0 @@
-"use strict";!function(){function t(){var t=$.ajax({url:"content.json",method:"get",async:!1});return JSON.parse(t.responseText)}$.get("/templates/portfolio.html").then(function(e){var n=Handlebars.compile(e),o=t();$(".portfolio").append(n(o))})}();
