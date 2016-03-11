@@ -8,6 +8,6 @@ I've been programming since I was 12, writing terrible IRC scripts and Delphi ap
 
 When coding I specialize in Laravel and PHP, responsive design, Javascript and Sass/CSS, but I'm trying to include more Ruby and more Python in there. I also love Angular, and it's my tool of choice when developing sites on top of an API.
 
-You can usually reach me through [email](mailto: andre.castelo+portfolio@gmail.com).
+[You can usually reach me through email](mailto: andre.castelo+portfolio@gmail.com).
 
-If you want the artist, you're on the wrong site. [Click here](http://andrecasteloart.com)
+[Also click here to checkout my illustrations.](http://andrecasteloart.com)
