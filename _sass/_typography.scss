@@ -9,6 +9,6 @@
 @mixin lato             { font-family: "Lato"; font-weight: 900; text-transform: uppercase; }
 @mixin textshadow       { text-shadow: 2px 2px 9px darken($background-color, 20); }
 @mixin serif_font       { font-family: "Georgia"; }
-@mixin monospaced       { font-family: "Source Code Pro"; text-transform: lowercase; }
+@mixin monospaced       { font-family: "Source Code Pro"; }
 
 body { @include open_sans; }

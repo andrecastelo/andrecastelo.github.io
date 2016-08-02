@@ -3,6 +3,7 @@ layout: post
 title: "Refactoring CodeIgniter to Laravel"
 date: 2016-03-08 10:03:35 -0300
 tags: php codeigniter laravel refactor
+published: false
 ---
 I've been working with a lot of CodeIgniter legacy projects in recent years, and after getting acquainted with Laravel, going back to CI is a lot harder. When coming back to one of those codebases, the first thing that comes to mind is nuke the project from orbit and start over with a better framework and understanding. However, sometimes it isn't feasible to do a full rewrite, but we can do it step by step. In this article I'll discuss how best to do this.
 
