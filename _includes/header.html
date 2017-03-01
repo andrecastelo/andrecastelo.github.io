@@ -1,13 +1,9 @@
-<header>
-    <div class="row">
-        <div class="medium-8">
-            <a href="{{ site.url }}" class='logo'>Andre Castelo</a>
-        </div>
-        <div class="medium-4">
-            {% include page_list.html %}
-        </div>
-    </div>
-</header>
+<!-- header start -->
 
-<div class="hero hero--no-index">
-</div>
+{% if site.float_logo %}
+    <a href="{{ site.url }}{{ site.baseurl }}" class="logo-readium">
+        <!-- <span class="logo" style="background-image: url({{ site.logo }})"></span> -->
+        home
+    </a>
+{% endif %}
+<!-- header end -->
