@@ -3,6 +3,7 @@ layout: post
 title: "Custom users in Django"
 date: 2016-08-01 10:03:35 -0300
 tags: php codeigniter laravel refactor
+published: false
 ---
 As part of my project to really understand the pros and cons of the major web frameworks, I've been tinkering with Django and the Django Rest Framework, and their builtin mechanisms for authentication and permissions. My app needed some new fields on the User model, and I really didn't want to use foreign keys for this, so I wrote my own User model.
 
