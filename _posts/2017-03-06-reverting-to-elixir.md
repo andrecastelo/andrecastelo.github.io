@@ -12,7 +12,7 @@ However, if you have a rather legacy codebase or you're working on a project wit
 
 I decided to revert to Elixir and run with Gulp's simpler way of handling things. It was rather straightforward, I just switched `laravel-mix` for `laravel-elixir` in the `package.json` and added a `gulpfile.js` to the repo (removing `webpack.mix.js` as well). In the end the `package.json` looks like this:
 
-```json
+{% highlight json %}
 {
   "private": true,
   "scripts": {
@@ -28,6 +28,6 @@ I decided to revert to Elixir and run with Gulp's simpler way of handling things
     ...
   }
 }
-```
+{% endhighlight %}
 
 Run `npm install` and compile stuff with `npm run watch`.
